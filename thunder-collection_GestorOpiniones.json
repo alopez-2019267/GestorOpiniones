@@ -1,0 +1,411 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOpiniones",
+    "dateExported": "2024-03-01T23:17:50.724Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-01T21:25:00.944Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ee50517c-7fa1-4cc3-bf86-5575dd7dc58e",
+            "name": "Publication",
+            "containerId": "",
+            "created": "2024-03-01T21:25:14.919Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "a8564191-1146-4919-b019-2eae50ffa8d3",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-03-01T23:08:45.899Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "81e4a662-0ab4-4964-9986-138c6739ee16",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "ee50517c-7fa1-4cc3-bf86-5575dd7dc58e",
+            "name": "test",
+            "url": "/publication/test",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T21:25:27.974Z",
+            "modified": "2024-03-01T21:42:24.656Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dae7476a-17e8-4606-8a69-b81ddaf46274",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "ee50517c-7fa1-4cc3-bf86-5575dd7dc58e",
+            "name": "Crear Publicacion",
+            "url": "/publication/createPublication",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T21:43:48.505Z",
+            "modified": "2024-03-01T22:57:52.847Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNGJkN2Q2YTg5NWE5MTM2ZGQ3MzYiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkNMSUVOVEUiLCJpYXQiOjE3MDkzMzM3MzEsImV4cCI6MTcwOTM0NDUzMX0.gvts-P0mOThU1lsFGixeulfBNExIJL625BKUPst-JBs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "tittle",
+                        "value": "Viernes - noticiero"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Informacion"
+                    },
+                    {
+                        "name": "principalText",
+                        "value": "Se murio el presidente"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e25c530e061ce407a2f3c5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "af11e92c-d6a9-4d6c-b565-f86fbe13b6f6",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "ee50517c-7fa1-4cc3-bf86-5575dd7dc58e",
+            "name": "Actualizar publicación",
+            "url": "/publication/updatePublication/65e25d70cde2fb9809c92c2c",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T21:49:09.649Z",
+            "modified": "2024-03-01T22:58:19.200Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNGJkN2Q2YTg5NWE5MTM2ZGQ3MzYiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkNMSUVOVEUiLCJpYXQiOjE3MDkzMzM3MzEsImV4cCI6MTcwOTM0NDUzMX0.gvts-P0mOThU1lsFGixeulfBNExIJL625BKUPst-JBs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "tittle",
+                        "value": "Viernes - noticias"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Alimentación"
+                    },
+                    {
+                        "name": "principalText",
+                        "value": "Las bananas son malas para adelgazar"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e24bd7d6a895a9136dd736"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "20b48f56-29ad-4d1f-b8d7-b0dd4fe93c9f",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T22:04:09.693Z",
+            "modified": "2024-03-01T23:02:46.233Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "account",
+                        "value": "admin@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "admin123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a210fa27-4654-4c66-9105-fcc357651f89",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "ee50517c-7fa1-4cc3-bf86-5575dd7dc58e",
+            "name": "Eliminar publicacion",
+            "url": "/publication/deletePublication/65e25ca20e061ce407a2f3c9",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-01T22:09:22.182Z",
+            "modified": "2024-03-01T22:55:10.357Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNGJkN2Q2YTg5NWE5MTM2ZGQ3MzYiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkNMSUVOVEUiLCJpYXQiOjE3MDkzMzIwMTAsImV4cCI6MTcwOTM0MjgxMH0.4FQel9lZZN0wQkx2yP89GqdkszF0KUxYtaZ8FkFvLfo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "userId",
+                        "value": "65e25c530e061ce407a2f3c5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0d4f01da-d313-4872-99d5-6308b5af30f0",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "Registrar Usuario",
+            "url": "/user/registerUser",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-01T22:51:45.640Z",
+            "modified": "2024-03-01T22:53:07.697Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Antony"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Doren"
+                    },
+                    {
+                        "name": "username",
+                        "value": "adoren"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "adoren@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "152a2a7a-0cf5-475c-b234-b7a7173fc0e8",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "test",
+            "url": "/user/test",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-01T22:59:10.741Z",
+            "modified": "2024-03-01T22:59:20.204Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68780f3f-389a-44e6-8067-fde5de533d01",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "Update user",
+            "url": "/user/updateUser/65e25c530e061ce407a2f3c5",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-01T22:59:39.069Z",
+            "modified": "2024-03-01T23:00:31.193Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNGJkN2Q2YTg5NWE5MTM2ZGQ3MzYiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkNMSUVOVEUiLCJpYXQiOjE3MDkzMzM3MzEsImV4cCI6MTcwOTM0NDUzMX0.gvts-P0mOThU1lsFGixeulfBNExIJL625BKUPst-JBs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pedro"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2acba7b0-2d36-497c-903b-0fd7348e0aa4",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "dc5ed24c-50f2-4093-b00b-3be98be38fc9",
+            "name": "Update contraseña user",
+            "url": "/user/updateUserPass/65e25c530e061ce407a2f3c5",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-01T23:00:59.285Z",
+            "modified": "2024-03-01T23:02:04.703Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNGJkN2Q2YTg5NWE5MTM2ZGQ3MzYiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkNMSUVOVEUiLCJpYXQiOjE3MDkzMzM3MzEsImV4cCI6MTcwOTM0NDUzMX0.gvts-P0mOThU1lsFGixeulfBNExIJL625BKUPst-JBs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "12345677"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2314a06b-ed86-48e6-9a45-cf0cd6335a62",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "a8564191-1146-4919-b019-2eae50ffa8d3",
+            "name": "Crear comentario",
+            "url": "/comment/createComment",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-01T23:09:02.908Z",
+            "modified": "2024-03-01T23:10:29.550Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Me parece una mala publicacion"
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e25bf50e061ce407a2f3c3"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e25c530e061ce407a2f3c5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "82c25cf1-6b68-46dd-bf6a-cbe34d3de7dc",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "a8564191-1146-4919-b019-2eae50ffa8d3",
+            "name": "test",
+            "url": "/comment/test",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-01T23:11:21.997Z",
+            "modified": "2024-03-01T23:11:31.298Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16a739a4-6cbd-4e07-9060-96225f259e54",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "a8564191-1146-4919-b019-2eae50ffa8d3",
+            "name": "Update comment",
+            "url": "/comment/updateComment/65e261e690f812152f7f7e0c",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-03-01T23:11:41.292Z",
+            "modified": "2024-03-01T23:17:28.548Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Me parece una buena publicacion"
+                    },
+                    {
+                        "name": "userId",
+                        "value": "65e25c530e061ce407a2f3c5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "11bf01af-0503-4cf7-9fb7-3ae0f415a2c3",
+            "colId": "8ea829c4-23cf-4551-a631-5739d3d84d35",
+            "containerId": "a8564191-1146-4919-b019-2eae50ffa8d3",
+            "name": "Borrar Comentario",
+            "url": "/comment/deleteComment/65e2618540125c154f904044",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-03-01T23:12:52.580Z",
+            "modified": "2024-03-01T23:15:45.426Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "userId",
+                        "value": "65e25c530e061ce407a2f3c5"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
